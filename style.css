@@ -138,10 +138,9 @@ i {
     margin-top: -4px;
     transition: margin 0.3s;
 }
-
-.btn-new { top: 45px;}
-.btn-roll { top: 403px;}
-.btn-hold { top: 467px;}
+.btn-rule{
+    color: red;
+}
 
 .dice {
     position: absolute;
@@ -154,3 +153,31 @@ i {
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+#game-rules{
+    display: none;
+    background-color: white;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+}
+#game-rules.active{
+    display: block;
+}
+#game-rules h3{
+    color: #6767dc;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+#game-rules h3 i{
+    transform: rotate(45deg);
+    float: right;
+    cursor: pointer;
+}
+
+#game-rules ul li{
+    margin-bottom: 10px;
+    padding-left: 10px;
+    list-style-type: disc;
+}

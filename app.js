@@ -93,3 +93,11 @@ function nextPlayer() {
     roundScore = 0;
     diceDOM.style.display = 'none';
 };
+
+//opening and closing the rules page
+document.querySelector('.btn-rule').addEventListener('click', function(){
+    document.querySelector("#game-rules").classList.add('active');
+});
+document.querySelector('.cross').addEventListener('click', function(){
+    document.querySelector("#game-rules").classList.remove('active');
+});
