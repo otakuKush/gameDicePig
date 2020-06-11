@@ -45,9 +45,8 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
         //2.Show the dice image, and show the correct image as per the dice number
         diceDOM.style.display = 'block';
         diceDOM.src = 'dice-' + dice + '.png';
-
         //3.Update the round score IF the rolled number is not 1
-        if (dice !== 1 && diceRoll !== dice) {
+        if (dice !== 1 ) {
             //add score
             roundScore += dice;
             diceRoll = dice;
